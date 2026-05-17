@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@400;700&display=swap');
+
+@theme {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Orbitron', sans-serif;
+
+  --color-cyber-green: #00FF66;
+  --color-cyber-dark: #020202;
+  --color-cyber-gray: #0a0a0a;
+  --color-cyber-alt: #050505;
+}
+
+body {
+  background-color: var(--color-cyber-dark);
+  color: var(--color-cyber-green);
+  font-family: var(--font-mono);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.terminal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  background: var(--color-cyber-dark);
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyber-green);
+}

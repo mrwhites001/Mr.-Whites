@@ -1,0 +1,8 @@
+{
+  "name": "Mr. Whites - Cyber Intelligence",
+  "description": "An elite AI cybersecurity researcher and software engineering assistant with deep analysis capabilities and an integrated command system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
